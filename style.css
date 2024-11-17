@@ -1,0 +1,1094 @@
+/* Import the font at the top of your CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&display=swap');
+body {
+  margin: 0;
+  font-family: 'Archivo Black', sans-serif;
+  color: #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('empty tank.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bar {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* White text color */
+  padding: 0.5em 1.5em; /* Reduce padding to make the bar smaller */
+  text-align: center; /* Center-align the content */
+  font-size: 0.9em; /* Reduce the text size */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for effect */
+  border: 2px solid #000; /* Black border */
+  border-radius: 5px; /* Optional: Rounded corners for a softer look */
+}
+
+/* Example for adding some responsiveness */
+@media screen and (max-width: 600px) {
+  .bar {
+    font-size: 0.8em; /* Adjust text size for smaller screens */
+    padding: 0.5em; /* Further reduce padding on smaller screens */
+  }
+}
+
+p {
+  font-size: 0.9em;
+  max-width: 35em;
+  line-height: 27px;
+}
+
+h1, h2 {
+  font-weight: 350;
+}
+
+h1 {
+  margin: 0.5em 0;
+  font-size: 3em;
+}
+
+.specs h2, .about h2 {
+  font-size: 2em;
+  padding-left: 1.2em;
+  border-left: 0.1em #5bc7ca solid;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+section {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  margin: 2em auto;
+  padding: 3em;
+  max-width: 1200px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+/*Set all flex layouts*/
+nav, .infos, .info,
+.specs-header, .specs li,
+.stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.specs, .icon,
+.panel:first-child,
+.panel:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background: transparent;
+  height: auto;
+  min-height: auto;
+  margin-bottom: 0;
+  padding: 0;
+  background: url(banner.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/*=== Navbar ===*/
+nav {
+  padding: 1.5em 2.5em;
+  position: relative;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.brand {
+  font-size: 1.3em;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 0.8em;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav a:hover {
+  color: #eee;
+}
+
+/*=== Header Body ===*/
+
+
+.header-body {
+  padding: 6em 4em 2em 4em;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'I', sans; /* Thick, modern font */
+  font-weight: 800; /* Set to a thicker weight */
+}
+
+.header-body p {
+  max-width: 25em;
+}
+
+.header-body h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+  margin: 0;
+}
+
+/*=== About Section ===*/
+.heading h2 {
+  margin-bottom: 1em;
+}
+
+.heading p {
+  margin-left: 3em;
+  display: inline-block;
+}
+
+.infos {
+  gap: 2em;
+}
+
+.infos, .heading {
+  padding: 5em 1em;
+}
+
+.info img {
+  max-width: 6em;
+  margin-right: 1em;
+}
+
+.info h3 {
+  margin-bottom: 0.5em;
+}
+
+.info p {
+  max-width: 15em;
+} 
+
+/*=== Specs Section ===*/
+.specs {
+  min-height: 40em;
+  position: relative;
+  padding-top: 2em;
+  padding-bottom: 8em;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  margin: 2em auto;
+  padding: 3em;
+  max-width: 1200px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.specs-header {
+  text-align: center;
+  margin-bottom: 2em;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 1.5em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.specs-header h2 {
+  color: #fff;
+  font-size: 2.5em;
+  margin: 0;
+  padding: 0;
+  border-left: none; /* Remove the left border if it exists */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.specs ul {
+  width: 40em;
+  margin-top: 3em;
+}
+
+.specs li {
+  padding: 0.6em 0;
+  border-bottom: #555 1px solid;
+}
+
+.specs li span:first-child {
+  color: #888;
+}
+.steps {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2em 3em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.steps ol {
+  counter-reset: step; /* Reset counter for custom numbering */
+  list-style: none;
+  padding: 0;
+}
+
+.steps li {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1em;
+  padding: 1.5em;
+  border-radius: 10px;
+}
+
+.steps li::before {
+  content: counter(step);
+  counter-increment: step; /* Increment the counter for each list item */
+  position: absolute;
+  top: 50%;
+  left: -1.5em;
+  transform: translateY(-50%);
+  background: #f04a3d; /* Red background for numbers */
+  color: white;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps li strong {
+  color: #333; /* Highlight important text in bold */
+  font-weight: 700;
+}
+/*=== Panels Section ===*/
+.panels {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 40em;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 8em;
+}
+
+.panel > div {
+  padding: 1em;
+}
+
+.panels-sm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.panel:first-child,
+.panel:last-child {
+  padding: 1em;
+}
+
+.panel:first-child {
+  background: #7a2727;
+}
+
+.panel:last-child {
+  background: #fff;
+  color: #555;
+}
+
+.panel:nth-child(2) {
+  background: url(img/panel1.jpg) no-repeat center;
+}
+
+.panel:nth-child(3) {
+  background: url(img/panel2.jpg) no-repeat center;
+}
+
+.panel:nth-child(2),
+.panel:nth-child(3) {
+  background-size: cover;  
+  position: relative;
+}
+
+/*Set all image dark overlays*/
+.specs::before,
+.panel:nth-child(2):before,
+.panel:nth-child(3):before {
+  content: '';
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.panel h2 {
+  margin: 0.7em 0;
+}
+
+.panel-lg {
+  background: url(img/panel3.jpg) no-repeat center;
+  background-size: cover;  
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  font-size: 2em;
+  border-radius: 50%;
+  width: 1.5em;
+  height: 1.5em; 
+}
+
+.panel:first-child .icon {
+  border: 3px #fff solid;
+}
+
+.panel:last-child .icon {
+  border: 3px #555 solid;
+}
+
+/* Dropdown Button Container */
+.dropdown-container {
+  text-align: center;
+  margin: 2em 0;
+  position: relative;
+}
+
+/* Dropdown Button */
+.dropdown-btn {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dropdown-btn:hover {
+  background-color: #0056cc;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  background-color: var(--color-black);
+  min-width: 200px;
+  max-height: 300px; /* Set maximum height */
+  overflow-y: auto; /* Enable vertical scrolling */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  text-align: left;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #666 #333; /* For Firefox */
+}
+
+/* Customize scrollbar for webkit browsers */
+.dropdown-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+  background: #333;
+  border-radius: 5px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+  background: #666;
+  border-radius: 5px;
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+  color: var(--color-white);
+  padding: 1em;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s;
+  border-bottom: 1px solid #444;
+}
+
+.dropdown-content a:hover {
+  background-color: #333;
+}
+
+/* Add this class for JavaScript toggle */
+.show {
+  display: block;
+  margin-top: 0.5em;
+}
+
+:root {
+  --color-primary: #0073ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+ 
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url(./bg.jpg);
+  background-position: center;
+}
+/*=== Stats Section ===*/
+.car-stats {
+  padding: 12em 1em;
+  margin-top: 5em;
+}
+
+.stats {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.stats > div {
+  margin-bottom: 1em;
+  position: relative;
+  min-width: 10em;
+}
+
+.stats > div h1:nth-child(2) {
+  color: #282828;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.stats h5 {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.7em;
+}
+
+.counter {
+  margin: 0.1em 0;
+}
+
+.car {
+  padding: 2em 1em;
+  margin-top: 8em;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.circle {
+  border: 2px #ccc solid;
+  border-radius: 50%;
+  width: 100%;
+  max-width: 800px;
+  margin: 6em auto;
+  position: relative;
+  background: #161616;
+  animation: glow 4s ease-in-out infinite;
+  aspect-ratio: 2 / 1;
+}
+
+.car img {
+  width: 80%;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  object-fit: contain;
+  height: auto;
+}
+
+.circle div {
+  border: inherit;
+  border-radius: inherit;
+  background: inherit;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: inherit;
+}
+
+.circle .inner-md-circle {
+  width: 75%;
+  height: 75%;
+  top: 10%;
+  animation-delay: 3s;
+}
+
+.circle .inner-sm-circle {
+  width: 50%;
+  height: 50%;
+  top: 20%;
+  animation-delay: 6s;
+}
+
+@media screen and (max-width: 900px) {
+  .menu-btn {
+    display: block;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  .menu-btn:hover {
+    color: #eee;
+  }
+  .brand, .menu-btn {
+    position: relative;
+    z-index: 1;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    background: #161616;
+    width: 100%;
+    z-index: 0;
+    height: 0;
+    overflow-y: hidden;
+    transition: 0.6s ease-in-out;
+  }
+  /*Open class for JS*/
+  .menu-open {
+    height: 17em;
+    padding: 5em 0 1em 0;
+  }
+  .menu li {
+    display: block;
+    margin: 1em 0;
+  }
+  .specs ul {
+    width: 80vw;
+  }
+  .infos, .info, .stats {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .infos {
+    gap: 3em; 
+  }
+  .info img {
+    margin: 0 0 1em 0;
+  }
+  .panels, .panels-sm {
+    grid-template-columns: 1fr;
+  }
+  .panel, .panel-lg {
+    min-height: 15em;
+  }
+  .panel:nth-child(2) {
+    order: 1;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@keyframes glow {
+  0% {box-shadow: none;}
+  50% {box-shadow: 0 0 1em #5bc7ca;}
+  100% {box-shadow: none;}
+}
+
+.dropdown-content {
+    display: none;
+    /* ... your existing styles ... */
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+/* Add these styles to your CSS */
+.header-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1em 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 2em;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.nav-item {
+    color: #333; /* Dark text color for contrast */
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: #5bc7ca; /* Keep existing hover color or adjust as needed */
+}
+
+/* Adjust your existing header to account for the fixed nav */
+header {
+    margin-top: 60px; /* Adjust this value based on your nav height */
+}
+
+/* Update the car image styles for specific models */
+.car img[src*="camry"] {
+    width: 90%; /* Keep Camry at original size */
+    top: 45%;
+}
+
+/* Larger size for Corolla through Sienna */
+.car img[src*="carolla"],
+.car img[src*="prius"],
+.car img[src*="rav4"],
+.car img[src*="sienna"] {
+    width: 140%; /* Increased size */
+    max-width: 900px; /* Increased max-width */
+    top: 50%;
+}
+
+/* Keep the original size for other models */
+.car img[src*="venza"],
+.car img[src*="mirai"] {
+    width: 90%;
+    top: 45%;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .car img[src*="carolla"],
+    .car img[src*="prius"],
+    .car img[src*="rav4"],
+    .car img[src*="sienna"] {
+        width: 120%; /* Slightly smaller on mobile but still larger */
+    }
+}
+
+.graph-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 2em auto;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: none; /* Hidden by default */
+}
+
+.graph-container.show {
+    display: block;
+}
+
+.comparison-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2em;
+  padding: 2em;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.comparison-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  min-width: 0; /* Prevents flex items from overflowing */
+}
+
+.comparison-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 200px;
+}
+
+/* Update existing car-stats class */
+.car-stats {
+  width: 100%;
+  min-width: 0; /* Prevents flex items from overflowing */
+}
+
+/* Responsive design */
+@media screen and (max-width: 1200px) {
+  .comparison-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .comparison-side {
+    width: 100%;
+  }
+  
+  .comparison-divider {
+    margin: 2em 0;
+  }
+}
+
+/* Add new styles for the about section */
+.about {
+  padding-top: 2em;
+  margin-top: 0;
+  min-height: auto;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('empty tank.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.content-box {
+  margin-top: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 3em;
+  max-width: 800px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  color: #fff;
+  font-size: 3.5em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.heading p {
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin: 0;
+  text-align: left;
+}
+
+/* Update the scroll-padding to account for fixed header */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Adjust this value to match your header height */
+}
+
+/* Update header-nav styles */
+.header-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  padding: 1em 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds subtle shadow */
+}
+
+/* Add style for active nav item */
+.nav-item.active {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Add hover effect */
+.nav-item:hover {
+  background-color: var(--color-primary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Add styles for the steps container and icons */
+.steps-container {
+  display: flex;
+  gap: 4em;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.icons-column {
+  flex: 0 0 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 4.5em;
+  padding-top: 1em;
+}
+
+.icon-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 1.5em;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1em;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.icon-box p {
+  color: #fff;
+  font-size: 1.1em;
+  margin: 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Update steps section styles */
+.steps {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 2em 3em;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.steps ol li {
+  padding: 1em 0;
+  line-height: 1.5;
+}
+
+/* Responsive design */
+@media screen and (max-width: 968px) {
+  .steps-container {
+    flex-direction: column;
+  }
+  
+  .icons-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .icon-box {
+    flex: 0 0 calc(33.33% - 1em); /* Adjust for three columns on medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .icon-box {
+    flex: 0 0 calc(50% - 1em); /* Two columns on smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .icon-box {
+    flex: 0 0 100%; /* Single column on mobile */
+  }
+}
+
+/* Add styles for the Toyota logo */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 2em;
+}
+
+.toyota-logo {
+  width: 40px; /* Adjust size as needed */
+  height: auto;
+  margin-left: 1em;
+}
+
+/* Update nav-links to not take full width */
+.nav-links {
+  display: flex;
+  gap: 2em;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .header-nav {
+    padding: 0.5em 1em;
+  }
+  
+  .toyota-logo {
+    width: 30px; /* Smaller on mobile */
+  }
+}
+
+

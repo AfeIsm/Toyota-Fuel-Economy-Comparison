@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>toy</title>
+</head>
+
+<body>
+  <nav class="header-nav">
+    <div class="nav-links">
+      <a href="#about" class="nav-item">About</a>
+      <a href="#specs" class="nav-item">Fuel Economy</a>
+      <a href="#car-models" class="nav-item">Car Models</a>
+    </div>
+    <img src="toyota.png" alt="Toyota Logo" class="toyota-logo">
+  </nav>
+
+  <header>
+    <div class="header-body">
+      <h1>Toyota's History of Gas Mileage</h1>
+    </div>
+  </header>
+
+  <section class="about" id="about">
+    <div class="content-box">
+      <div class="heading">
+        <h2>Importance of Fuel Economy</h2>
+        <p>
+          Fuel economy is a measure of how far a vehicle can travel on a specific amount of fuel. 
+          The importance of fuel economy is that it impacts the amount of money spent on gas, 
+          reduces greenhouse gas emissions by using less fuel, and positively influences the 
+          overall impact of transportation. This makes fuel economy a key factor to consider 
+          when buying a car.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="specs" id="specs">
+    <div class="specs-header">
+    </div>
+    
+    <div class="steps-container">
+      <!-- Icons Column -->
+      <div class="icons-column">
+        <div class="icon-box">
+          <img src="environment.png" alt="Environmental Impact" class="icon">
+          <p>Environmental Impact</p>
+        </div>
+        <div class="icon-box">
+          <img src="gas station.png" alt="Fuel Efficiency" class="icon">
+          <p>Fuel Efficiency</p>
+        </div>
+        <div class="icon-box">
+          <img src="speed.png" alt="Speed Management" class="icon">
+          <p>Speed Management</p>
+        </div>
+      </div>
+
+      <!-- Steps Column -->
+      <section class="steps">
+        <ol>
+          <li>Keep your vehicle well-maintained, including regular servicing and tire pressure checks.</li>
+          <li>Switch off the engine when idling for more than a minute.</li>
+          <li>Plan your trips to combine errands and avoid multiple short journeys.</li>
+          <li>Drive at a consistent speed, using cruise control on highways to minimize fuel consumption.</li>
+          <li>Avoid carrying unnecessary weight in your car to improve fuel efficiency.</li>
+          <li>Remove roof racks or cargo boxes when not in use to reduce aerodynamic drag.</li>
+          <li>Carpool or use public transport whenever possible to save fuel.</li>
+          <li>Consider upgrading to a fuel-efficient or hybrid vehicle if feasible.</li>
+        </ol>
+      </section>
+    </div>
+  </section>
+  
+  
+
+  <div class="comparison-wrapper" id="car-models">
+    <!-- Left side -->
+    <div class="comparison-side">
+      <div class="dropdown-container">
+        <button class="dropdown-btn" onclick="window.toggleDropdown('left')">Select Car 1 ▼</button>
+        <div class="dropdown-content" id="dropdownContent-left">
+          <a href="#model1" onclick="window.changeCar('model1', 'left')">Toyota Camry LE-SE</a>
+          <a href="#model2" onclick="window.changeCar('model2', 'left')">Toyota Camry XLE-XSE</a>
+          <a href="#model3" onclick="window.changeCar('model3', 'left')">Toyota Corolla</a>
+          <a href="#model4" onclick="window.changeCar('model4', 'left')">Toyota Prius</a>
+          <a href="#model5" onclick="window.changeCar('model5', 'left')">Toyota Prius Prime</a>
+          <a href="#model6" onclick="window.changeCar('model6', 'left')">Toyota RAV4 Hybrid</a>
+          <a href="#model7" onclick="window.changeCar('model7', 'left')">Toyota RAV4 PRIME</a>
+          <a href="#model8" onclick="window.changeCar('model8', 'left')">Toyota Sienna</a>
+          <a href="#model9" onclick="window.changeCar('model9', 'left')">Toyota Venza</a>
+          <a href="#model10" onclick="window.changeCar('model10', 'left')">Toyota Mirai Limited</a>
+          <a href="#model11" onclick="window.changeCar('model11', 'left')">Toyota Mirai XLE</a>
+        </div>
+      </div>
+      <div class="car-stats">
+        <div class="car">
+          <div class="circle">
+            <img src="car.png" alt="car" id="car-left"/>
+            <div class="inner-md-circle"></div>
+            <div class="inner-sm-circle"></div>
+          </div>
+        </div>
+        <div id="mpg-graph-left" class="graph-container"></div>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="comparison-divider">VS</div>
+
+    <!-- Right side -->
+    <div class="comparison-side">
+      <div class="dropdown-container">
+        <button class="dropdown-btn" onclick="window.toggleDropdown('right')">Select Car 2 ▼</button>
+        <div class="dropdown-content" id="dropdownContent-right">
+          <a href="#model1" onclick="window.changeCar('model1', 'right')">Toyota Camry LE-SE</a>
+          <a href="#model2" onclick="window.changeCar('model2', 'right')">Toyota Camry XLE-XSE</a>
+          <a href="#model3" onclick="window.changeCar('model3', 'right')">Toyota Corolla</a>
+          <a href="#model4" onclick="window.changeCar('model4', 'right')">Toyota Prius</a>
+          <a href="#model5" onclick="window.changeCar('model5', 'right')">Toyota Prius Prime</a>
+          <a href="#model6" onclick="window.changeCar('model6', 'right')">Toyota RAV4 Hybrid</a>
+          <a href="#model7" onclick="window.changeCar('model7', 'right')">Toyota RAV4 PRIME</a>
+          <a href="#model8" onclick="window.changeCar('model8', 'right')">Toyota Sienna</a>
+          <a href="#model9" onclick="window.changeCar('model9', 'right')">Toyota Venza</a>
+          <a href="#model10" onclick="window.changeCar('model10', 'right')">Toyota Mirai Limited</a>
+          <a href="#model11" onclick="window.changeCar('model11', 'right')">Toyota Mirai XLE</a>
+        </div>
+      </div>
+      <div class="car-stats">
+        <div class="car">
+          <div class="circle">
+            <img src="car.png" alt="car" id="car-right"/>
+            <div class="inner-md-circle"></div>
+            <div class="inner-sm-circle"></div>
+          </div>
+        </div>
+        <div id="mpg-graph-right" class="graph-container"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCjDBRT3LqEGvfiNQi7OngmAJSjLZr2Jbo",
+      authDomain: "hackutd-ripple-effect.firebaseapp.com",
+      projectId: "hackutd-ripple-effect",
+      storageBucket: "hackutd-ripple-effect.appspot.com",
+      messagingSenderId: "116208313988",
+      appId: "1:116208313988:web:719ec5a66aa090aab184d1",
+      measurementId: "G-5Y4HT4W3MG"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    
+    // Initialize Firestore and make it globally available
+    window.db = getFirestore(app);
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
