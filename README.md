@@ -27,4 +27,4 @@ What's next for Toyota Fuel Economy Comparison:
 
 Our project can be very useful for people trying to shop car's, especially college students like us who are on a budget. Fuel Economy isn't talked about enough when buying a new car, but with out website, it becomes easier to decide which car is a better fit for people depending on it miles per gallon, because some people might need more than others, so this can definitely be used going forward.
 
-Built With: css, firebase, html, javascript, python, Visual-studio
+Built With: css, firebase, html, javascript, python, visual-studio
